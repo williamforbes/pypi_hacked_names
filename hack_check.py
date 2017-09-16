@@ -3,39 +3,34 @@ import time
 import platform
 import json
 
-
-
-
-# "We are checking for malicious libraries that may have been inserted onto your computer through a PyPi mislabeling technique"
+# "We are checking for malicious libraries that may have been inserted onto your computer
+#  through a PyPi mislabeling technique"
 # "Note, this program was written to support python version 2.7.x"
 
+# Extra context for you as you.
 print "python verison: " + platform.python_version()
+print "pip version: " + subprocess.check_output(['pip', '--version'])
 
-pip_version = subprocess.check_output(['pip', '--version'])
-print "pip version: " + pip_version
-
+# Visual interface because.
 full_output = raw_input("Do you want to see the full output? (Y or N) : ").lower()
 is_verbose = False
 if full_output == "y" or full_output=="yes":
 	is_verbose = True
-print ""
 
-array_bad_names  = []
+print ""
 
 with open('malicious_names.json') as malicious_file:
 	malicious_names = json.load(malicious_file)
 
+# Storing malicious libraries for the end.
 your_bad_libraries = []
-
 pip_listing = subprocess.check_output(['pip', 'list','--format=columns']).splitlines()
 
 for name in pip_listing:
 	was_name_hacked = False
 	for hack in malicious_names:
-
 		if hack["malicious_name"] in name:
 			print hack["malicious_name"] + " was found in " + name
-
 			was_name_hacked = True
 	
 	if was_name_hacked == True:		
@@ -48,15 +43,12 @@ for name in pip_listing:
 		time.sleep(.05)
 	
 print ""
-
 print ("Done reviewing libraries...")
 
 if len(your_bad_libraries) > 0:
-
 	print "potential hacks: "
 	for item in your_bad_libraries:
 		print "pip uninstall " + item.split(" ")[0]
-		
 	print ("\n")
 
 else:
