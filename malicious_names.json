@@ -1,0 +1,12 @@
+[
+  {"malicious_name":"acqusition"},
+  {"malicious_name":"apidev-coop"},
+  {"malicious_name":"bzip"},
+  {"malicious_name":"crypt"},
+  {"malicious_name":"django-server"},
+  {"malicious_name":"pwd"},
+  {"malicious_name":"setup-tools"},
+  {"malicious_name":"telnet"},
+  {"malicious_name":"urlib3"},
+  {"malicious_name":"urllib"}
+]

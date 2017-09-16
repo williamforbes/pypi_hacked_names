@@ -9,4 +9,4 @@ with installed packages.
 http://www.bytelion.com/blog/python-package-hack/
 
 # To Do
-See list of action items.  If you want to contribute.. please do!
+See list of action items.  Ifyou want to contribute.. please do! 
