@@ -3,7 +3,7 @@ import time
 import platform
 
 # "We are checking for malicious libraries that may have been inserted onto your computer through a PyPi mislabeling technique"
-#"Note, this program was written to support python version 2.7.x"
+# "Note, this program was written to support python version 2.7.x"
 
 print "You are using python verison: " + platform.python_version()
 
@@ -47,6 +47,3 @@ if len(your_bad_libraries) > 0:
 		print "Then, install the proper library"
 		
 	print ("\n")
-
-
-print ("We would love to have ou contribute to the project if you are interested in doing more") 
