@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import subprocess
 import time
 import platform
@@ -5,10 +7,9 @@ import json
 
 # "We are checking for malicious libraries that may have been inserted onto your computer
 #  through a PyPi mislabeling technique"
-# "Note, this program was written to support python version 2.7.x"
 
 # Extra context for you as you.
-print "python verison: " + platform.python_version()
+print "python version: " + platform.python_version()
 print "pip version: " + subprocess.check_output(['pip', '--version'])
 
 # Visual interface because.
