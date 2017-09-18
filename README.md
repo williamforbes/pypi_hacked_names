@@ -26,5 +26,8 @@ with installed packages.
 # The Blog Article
 http://www.bytelion.com/pypi-python-package-hack/
 
+The hacker news article:
+https://news.ycombinator.com/item?id=15256121
+
 # To Do
 See list of action items.  Ifyou want to contribute.. please do! 
