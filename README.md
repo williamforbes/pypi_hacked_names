@@ -24,7 +24,7 @@ with installed packages.
     as it runs code in the package. Go in the directory and delete the package.
 
 # The Blog Article
-http://www.bytelion.com/blog/python-package-hack/
+http://www.bytelion.com/pypi-python-package-hack/
 
 # To Do
 See list of action items.  Ifyou want to contribute.. please do! 
