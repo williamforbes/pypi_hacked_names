@@ -26,8 +26,11 @@ with installed packages.
 # The Blog Article
 http://www.bytelion.com/pypi-python-package-hack/
 
-The hacker news article:
+#The hacker news article:
 https://news.ycombinator.com/item?id=15256121
+
+#Twitter Hashtag:
+(#)PyPiNameHack  | https://twitter.com/hashtag/PyPiNameHack?src=hash
 
 # To Do
 See list of action items.  Ifyou want to contribute.. please do! 
