@@ -32,5 +32,11 @@ https://news.ycombinator.com/item?id=15256121
 #Twitter Hashtag:
 (#)PyPiNameHack  | https://twitter.com/hashtag/PyPiNameHack?src=hash
 
+#Reddit Posting:
+https://www.reddit.com/r/linux/comments/709a4t/pypi_compromised_by_fake_software_packages/
+https://www.reddit.com/r/programming/comments/4n60mp/taking_over_17000_hosts_by_typosquatting_package/
+NPM too!
+https://www.bleepingcomputer.com/news/security/52-percent-of-all-javascript-npm-packages-could-have-been-hacked-via-weak-credentials/
+
 # To Do
 See list of action items.  Ifyou want to contribute.. please do! 
