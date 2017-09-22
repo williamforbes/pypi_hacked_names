@@ -28,18 +28,18 @@ your_bad_libraries = []
 pip_listing = subprocess.check_output(['pip', 'list','--format=columns']).splitlines()
 
 for name in pip_listing:
-	was_name_hacked = False
-	for hack in malicious_names:
-		if hack["malicious_name"] in name:
-			print hack["malicious_name"] + " was found in " + name
+    was_name_hacked = False
+    for hack in malicious_names:
+		if hack["malicious_name"] == name:
+			print name + " is a typosquat"
 			was_name_hacked = True
 	
-	if was_name_hacked == True:		
-		your_bad_libraries.append(name)
-		print name + "\t"+ '\x1b[0;30;41m' + 'bad' + '\x1b[0m'
-		time.sleep(.1)
+    if was_name_hacked == True:
+        your_bad_libraries.append(name)
+        print name + "\t"+ '\x1b[0;30;41m' + 'bad' + '\x1b[0m'
+        time.sleep(.1)
 
-	elif is_verbose:
+    elif is_verbose:
 		print name + "\t"+ '\x1b[6;30;42m' + 'good' + '\x1b[0m'
 		time.sleep(.05)
 	
@@ -49,7 +49,7 @@ print ("Done reviewing libraries...")
 if len(your_bad_libraries) > 0:
 	print "potential hacks: "
 	for item in your_bad_libraries:
-		print "pip uninstall " + item.split(" ")[0]
+		print "manually uninstall " + item.split(" ")[0]
 	print ("\n")
 
 else:
